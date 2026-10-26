@@ -5,6 +5,14 @@ public class GenreDTO {
     private Long id;
     private String name;
 
+    public GenreDTO() {
+    }
+
+    public GenreDTO(com.devsuperior.movieflix.entities.Genre genre) {
+        id = genre.getId();
+        name = genre.getName();
+    }
+
     public Long getId() {
         return id;
     }

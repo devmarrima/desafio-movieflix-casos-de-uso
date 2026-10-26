@@ -8,6 +8,17 @@ public class MovieCardDTO {
     private Integer year;
     private String imgUrl;
 
+    public MovieCardDTO() {
+    }
+
+    public MovieCardDTO(com.devsuperior.movieflix.entities.Movie movie) {
+        id = movie.getId();
+        title = movie.getTitle();
+        subTitle = movie.getSubTitle();
+        year = movie.getYear();
+        imgUrl = movie.getImgUrl();
+    }
+
     public Long getId() {
         return id;
     }
